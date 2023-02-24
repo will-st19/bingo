@@ -1,13 +1,43 @@
-table {
-    border-collapse: collapse;
-    margin: auto;
+#bingo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-td {
+.bingo-card {
     border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bingo-card td {
+    width: 40px;
+    height: 40px;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    vertical-align: middle;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.bingo-card .marked {
+    background-color: rgb(124, 247, 23);
+}
+
+#next-number {
+    display: block;
+    margin: 10px auto;
+}
+
+.current-number {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
 }
